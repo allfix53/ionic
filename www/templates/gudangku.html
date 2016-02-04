@@ -1,0 +1,19 @@
+<ion-view title="Gudangku">
+    <ion-content overflow-scroll="true" padding="true" scroll="false" class="has-header">
+        <h4>Kontrol Gudang Batik Nit Not</h4>
+        <div class="list card">
+            <div class="item item-divider">Rangkuman gudang</div>
+            <div class="item item-body">
+                <button class="button button-positive button-block button-small icon ion-android-refresh button-full">Refresh</button>
+                <ion-list>
+                    <ion-item ui-sref="tabsController.semuaProduk">1999 total produk</ion-item>
+                    <ion-item ui-sref="kategoriProduk">19 kategori produk</ion-item>
+                    <ion-item ui-sref="tabsController.produkStokKosong">18 produk stok kosong</ion-item>
+                    <ion-item ui-sref="tabsController.produkStokMinim">657 stok dibawah minimum</ion-item>
+                </ion-list>
+            </div>
+        </div>
+        <div class="button-bar"></div>
+        <button class="button button-balanced button-block ">Tambah produk baru</button>
+    </ion-content>
+</ion-view>
