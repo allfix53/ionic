@@ -5,7 +5,12 @@ angular.module('app.controllers', ['ionic'])
 
 })
 
-.controller('dasboardCtrl', function($scope) {
+.controller('dasboardCtrl', function($scope, $ionicSideMenuDelegate) {
+
+    $scope.toggleLeftSideMenu = function() {
+        $ionicSideMenuDelegate.toggleLeft();
+    };
+
     $scope.all = [{
         name: 'Baju batik',
         stock: 4
@@ -53,7 +58,7 @@ angular.module('app.controllers', ['ionic'])
             angular.element(document.getElementById("menu-all")).addClass("focussed");
             angular.element(document.getElementById("menu-empty")).removeClass("focussed");
             angular.element(document.getElementById("menu-minim")).removeClass("focussed");
-            angular.element(document.getElementById("menu-search")).removeClass("focussed");           
+            angular.element(document.getElementById("menu-search")).removeClass("focussed");
         }
         if (menu == 'empty') {
             $scope.tab = {
@@ -65,7 +70,7 @@ angular.module('app.controllers', ['ionic'])
             angular.element(document.getElementById("menu-all")).removeClass("focussed");
             angular.element(document.getElementById("menu-empty")).addClass("focussed");
             angular.element(document.getElementById("menu-minim")).removeClass("focussed");
-            angular.element(document.getElementById("menu-search")).removeClass("focussed");    
+            angular.element(document.getElementById("menu-search")).removeClass("focussed");
         }
         if (menu == 'minim') {
             $scope.tab = {
@@ -77,7 +82,7 @@ angular.module('app.controllers', ['ionic'])
             angular.element(document.getElementById("menu-all")).removeClass("focussed");
             angular.element(document.getElementById("menu-empty")).removeClass("focussed");
             angular.element(document.getElementById("menu-minim")).addClass("focussed");
-            angular.element(document.getElementById("menu-search")).removeClass("focussed");    
+            angular.element(document.getElementById("menu-search")).removeClass("focussed");
         }
         if (menu == 'search') {
             $scope.tab = {
@@ -89,7 +94,7 @@ angular.module('app.controllers', ['ionic'])
             angular.element(document.getElementById("menu-all")).removeClass("focussed");
             angular.element(document.getElementById("menu-empty")).removeClass("focussed");
             angular.element(document.getElementById("menu-minim")).removeClass("focussed");
-            angular.element(document.getElementById("menu-search")).addClass("focussed");    
+            angular.element(document.getElementById("menu-search")).addClass("focussed");
         }
     }
 })
