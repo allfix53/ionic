@@ -1,0 +1,288 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: CaviarDreams_Bold;
+    src: url(CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: CaviarDreams_BoldItalic;
+    src: url(CaviarDreams_BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: CaviarDreams_Italic;
+    src: url(CaviarDreams_Italic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-BoldItalic;
+    src: url(OpenSans-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-ExtraBoldItalic;
+    src: url(OpenSans-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Italic;
+    src: url(OpenSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-LightItalic;
+    src: url(OpenSans-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Semibold;
+    src: url(OpenSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-SemiboldItalic;
+    src: url(OpenSans-SemiboldItalic.ttf);
+}
+
+.login-page {
+    background: url('../img/bg-gudang.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-login-page {
+    width: 300px;
+    margin-top: 50px;
+}
+
+.form-login {
+    margin-top: 25px;
+    width: 300px;
+}
+
+hr.form-login {
+    margin-top: 5px;
+    border-bottom: none;
+    border-top: 1px dotted rgba(255, 255, 255, .5)
+}
+
+form.form-login input {
+    width: 100%;
+    height: 45px;
+    background: none;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+form.form-login input:focus {
+    background: rgba(255, 255, 255, .2);
+}
+
+form.form-login button {
+    margin-top: 25px;
+    width: 100%;
+    height: 45px;
+    background: rgb(168, 56, 87);
+    border: 2px solid rgba(160, 50, 80, 1);
+    border-radius: 50px;
+    padding: 5px 20px;
+    color: #FFF;
+    font-family: CaviarDreams_Bold;
+}
+
+form.form-login button.register {
+    margin-top: 25px;
+    width: 100%;
+    height: 45px;
+    background: rgb(56, 222, 251);
+    border: 2px solid rgb(6, 202, 231);
+    border-radius: 50px;
+    padding: 5px 20px;
+    color: #067687;
+    font-family: CaviarDreams_Bold;
+}
+
+form.form-login label {
+    line-height: 35px;
+    font-family: CaviarDreams_Bold;
+    color: #FFF;
+    font-size: 12pt;
+}
+
+button.button-to-register {
+    margin-top: 25px;
+    width: 300px;
+    background: rgb(219, 191, 183);
+    border: none;
+    height: 45px;
+    border-radius: 50px;
+    padding: 5px 20px;
+    color: rgb(160, 50, 80);
+    font-family: CaviarDreams_Bold;
+}
+
+div.dashboard-top-panel {
+    height: 35px;
+    background: rgb(168, 56, 87);
+    font-family: OpenSans-Bold;
+    color: #FFF;
+    font-size: 18pt;
+    width: 100%;
+}
+
+.menu-dashboard-top-panel {
+    width: 40px;
+    height: 25px;
+    margin: 5px;
+    float: left;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 2px;
+}
+
+.title-dashboard-top-panel {
+    float: left;
+    font-size: 12pt;
+    line-height: 24pt;
+    margin-left: 5px;
+    width: 90%;
+    width: calc(100% - 55px);
+}
+
+div.dashboard-top-panel-sub {
+    border-top: 1px solid rgb(191, 82, 111);
+    height: 50px;
+    background: rgb(168, 56, 87);
+    font-family: OpenSans-Bold;
+    color: #FFF;
+    font-size: 18pt;
+    line-height: 36pt;
+    width: 100%;
+}
+
+div.dashboard-top-panel-sub div.menu-panel {
+    background: rgb(168, 56, 87);
+    width: 25%;
+    height: 50px;
+    float: left;
+    text-align: center;
+}
+
+div.dashboard-top-panel-sub div.menu-panel.focussed {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+h3.gudang-title {
+    font-family: OpenSans-Bold;
+    line-height: 35pt;
+    font-size: 10pt;
+    background: rgb(51, 205, 95);
+    color: #fff;
+}
+
+h3.gudang-title.all {
+    background: rgba(51, 205, 95, .9);
+}
+
+h3.gudang-title.empty {
+    background: rgba(239, 71, 58, .9);
+}
+
+h3.gudang-title.minim {
+    background: rgba(255, 201, 0, .9);
+}
+
+h3.gudang-title.search {
+    background: rgba(17, 193, 243, .9);
+}
+
+div.gudang-list {
+    padding: 10px;
+    border-bottom: 1px dotted #AAA;
+    line-height: 12pt;
+    height: 35px;
+    font-family: Opensans-Regular;
+}
+
+div.search-dashboard {
+    margin-top: 10px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.top-menu-loged {
+    position: absolute;
+    width: 100%;
+    z-index: 99999 !important;
+}
+
+.list-on-gudang {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 1px 1px rgba(200, 200, 200, .4);
+}
+
+.list-on-gudang .thumbnailY {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.list-on-gudang .contentY {
+    width: calc(100% - 100px);
+    height: 100px;
+    padding: 5px;
+    float: left;
+}
+
+.list-on-gudang .contentY h3 {
+    font-size: 10pt;
+    color: #444;
+    font-family: Opensans-Bold;
+    line-height: 10pt
+}
+
+.list-on-gudang .contentY p {
+    font-size: 9pt;
+    color: #444;
+    font-family: Opensans-Regular;
+    line-height: 10pt;
+}
+
+.pull-right {
+    float: right;
+}
+
+.bunder {
+    border-radius: 50px;
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 10pt !important;
+    font-family: Opensans-Bold;
+}

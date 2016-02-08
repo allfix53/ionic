@@ -1,0 +1,63 @@
+<ion-nav-view>
+    <ion-view title="Dashboard" class="dashboard">
+        <ion-content padding="false" scroll="false" style="height: 87px; z-index: 998;">
+            <div class="dashboard-top-panel">
+                <div class="menu-dashboard-top-panel">
+                    <center><i class="ion-android-more-horizontal"></i></center>
+                </div>
+                <div class="title-dashboard-top-panel">
+                    Batik Nit Not
+                </div>
+            </div>
+            <div class="dashboard-top-panel-sub">
+                <div id="menu-all" class="menu-panel menu-all focussed" ng-click="tabClick('all')">
+                    <center>
+                        <i class="ion-grid"></i>
+                    </center>
+                </div>
+                <div id="menu-empty" class="menu-panel" ng-click="tabClick('empty')">
+                    <center>
+                        <i class="ion-sad"></i>
+                    </center>
+                </div>
+                <div id="menu-minim" class="menu-panel" ng-click="tabClick('minim')">
+                    <center>
+                        <i class="ion-alert-circled"></i>
+                    </center>
+                </div>
+                <div id="menu-search" class="menu-panel" ng-click="tabClick('search')">
+                    <center>
+                        <i class="ion-search"></i>
+                    </center>
+                </div>
+            </div>
+        </ion-content>
+        <!-- <div ng-include src="'/templates/partial/top-menu-dashboard.html'"></div> -->
+        <ion-content overflow-scroll="true" padding="false" scroll="true" style="padding-top: 87px;">
+            <center ng-show="tab.all">
+                <h3 class="gudang-title all">Semua Produk</h3>
+            </center>
+            <center ng-show="tab.empty">
+                <h3 class="gudang-title empty">Produk kosong</h3>
+            </center>
+            <center ng-show="tab.minim">
+                <h3 class="gudang-title minim">Produk dibawah minimum</h3>
+            </center>
+            <center ng-show="tab.search">
+                <h3 class="gudang-title search">Pencarian</h3>
+            </center>
+            <div class="list-on-gudang" ng-repeat="item in all">
+                <div class="thumbnailY">
+                    <img class="full-image" src="img/nitnotitem.jpg">
+                </div>
+                <div class="contentY">
+                    <h3>{{item.name}}</h3>
+                    <button ng-if="item.stock > 5" class="button pull-right button-balanced bunder">{{item.stock}}</button>
+                    <button ng-if="item.stock <= 5 && item.stock > 0" class="button pull-right button-energized bunder">{{item.stock}}</button>
+                    <button ng-if="item.stock == 0" class="button pull-right button-assertive bunder">{{item.stock}}</button>
+                </div>
+            </div>
+            
+        </ion-content>
+    </ion-view>
+</ion-nav-view>

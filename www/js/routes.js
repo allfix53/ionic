@@ -8,9 +8,7 @@ angular.module('app.routes', [])
     // Each state's controller can be found in controllers.js
     $stateProvider
 
-
-
-        .state('menu.login', {
+        .state('login', {
         url: '/page3',
         views: {
             'side-menu22': {
@@ -20,14 +18,32 @@ angular.module('app.routes', [])
         }
     })
 
+    .state('view', {
+        url: '/view/loged',
+        views: {
+            'top-nav': {
+                templateUrl: 'templates/partial/top-menu-dashboard.html',
+                controller: 'test'
+            }
+        }
+    })
 
-
-
+    .state('signin', {
+        url: '/signin',
+        templateUrl: 'templates/gudangku/signin.html',
+        controller: 'signinCtrl'
+    })
 
     .state('signup', {
-        url: '/page4',
-        templateUrl: 'templates/signup.html',
-        controller: 'signupCtrl'
+        url: '/signup',
+        templateUrl: 'templates/gudangku/signup.html',
+        controller: 'signinCtrl'
+    })
+
+    .state('dashboard', {
+        url: '/dashboard',
+        templateUrl: 'templates/gudangku/dashboard.html',
+        controller: 'dasboardCtrl'
     })
 
 
@@ -112,7 +128,7 @@ angular.module('app.routes', [])
 
 
     .state('cameraTabDefaultPage', {
-        url: '/page14',
+        url: 'side-menu22/page14',
         templateUrl: 'templates/cameraTabDefaultPage.html',
         controller: 'cameraTabDefaultPageCtrl'
     })
@@ -149,6 +165,6 @@ angular.module('app.routes', [])
     ;
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/page4');
+    $urlRouterProvider.otherwise('/signin');
 
 });
